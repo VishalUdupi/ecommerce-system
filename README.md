@@ -2,17 +2,6 @@ E-Commerce System
 
 A microservices-based e-commerce backend built with Java, Spring Boot, and Spring Cloud, featuring dedicated services for authentication, product management, API routing, and service discovery.
 
-Architecture
-
-flowchart TD
-    Client[Client] --> Gateway[API Gateway]
-    Gateway --> Auth[Auth Service]
-    Gateway --> Product[Product Service]
-    Auth -.-> Eureka[Eureka Discovery Server]
-    Product -.-> Eureka
-    Auth --> DB[(PostgreSQL)]
-    Product --> DB
-
 Tech Stack
 
 Language: Java 17
